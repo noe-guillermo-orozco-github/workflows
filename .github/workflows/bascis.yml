@@ -32,7 +32,7 @@ jobs:
       #Extra step that will create an issue in 
       - run: gh issue create --title "Issue created from workflow" --body "Thanks for creating this issue"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
   
   # This is the second-job
   second-job:
